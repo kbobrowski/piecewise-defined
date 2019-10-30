@@ -1,6 +1,14 @@
 ## piecewise-defined function generator
 
-Small module to easily define piecewise functions
+Small module to easily define piecewise functions.
+
+#### Installation
+
+```bash
+npm install piecewise-defined
+```
+
+#### Example
 
 ```js
 const { Piecewise, PiecewiseGeneric } = require("piecewise-defined");
