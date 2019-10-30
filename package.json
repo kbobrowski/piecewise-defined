@@ -12,6 +12,10 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kbobrowski/piecewise-defined.git"
+  },
   "files": [
     "lib/**/*"
   ],
@@ -24,6 +28,7 @@
   ],
   "author": "Kamil Bobrowski",
   "license": "ISC",
+  "homepage": "https://github.com/kbobrowski/piecewise-defined",
   "devDependencies": {
     "@types/jest": "^24.0.21",
     "jest": "^24.9.0",
