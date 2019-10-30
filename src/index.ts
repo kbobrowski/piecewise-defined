@@ -1,8 +1,8 @@
 export const PiecewiseGeneric = <Tin, Tout>() => {
-  const pieces: {
+  const pieces: Array<{
     domainCheck: (x: Tin) => boolean;
     piecewiseFunction: (x: Tin) => Tout;
-  }[] = [];
+  }> = [];
 
   const api = {
     add(domainCheck: (x: Tin) => boolean, piecewiseFunction: (x: Tin) => Tout) {
@@ -12,7 +12,7 @@ export const PiecewiseGeneric = <Tin, Tout>() => {
 
     compile() {
       return (x: Tin) => {
-        for (let piece of pieces) {
+        for (const piece of pieces) {
           if (piece.domainCheck(x)) {
             return piece.piecewiseFunction(x);
           }
