@@ -1,1 +1,3 @@
-# piecewise-defined function generator
+## piecewise-defined function generator
+
+Small module to easily define piecewise functions
