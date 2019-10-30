@@ -1,0 +1,1 @@
+# piecewise-defined function generator
